@@ -1,0 +1,159 @@
+nav {
+    text-align: center;
+    width: 100%;
+    margin-top: -46px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eee;
+    padding: 20px;
+}
+
+.card {
+    width: 700px;
+    margin: auto;
+    background: #eee;
+    padding: 30px;
+    border: 1px solid #000;
+
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input {
+    width: 10%;
+    border: none;
+    /* border-bottom:1px solid #000; */
+    padding: 5px;
+    font-size: 14px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top .left,
+.top .right {
+    width: 45%;
+}
+
+button {
+    margin-top: 30px;
+    padding: 10px 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.section label h5 {
+    margin-top: -20px;
+    margin-left: -407px;
+}
+
+.date {
+    margin-right: -440px;
+    margin-top: -63px;
+}
+
+p {
+    margin-top: -20px;
+}
+
+.card label h5 input {
+    width: 213px;
+
+}
+
+.authority {
+    margin-left: 507px;
+    margin-top: -30px;
+}
+
+
+/* =========================
+   SCREEN RESPONSIVE ONLY
+   ========================= */
+
+@media screen and (max-width: 768px) {
+
+    nav {
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .section label h5 {
+        margin-left: 0;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .date {
+        margin: 10px 0 0 0;
+        text-align: center;
+    }
+
+    .card {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .card label h5 {
+        font-size: 14px;
+    }
+
+    .card label h5 input {
+        width: 100%;
+        margin-top: 6px;
+    }
+
+    .authority {
+        margin-left: 0;
+        margin-top: 20px;
+        text-align: right;
+    }
+}
+
+
+/* watermark */
+
+.card {
+    position: relative;
+    z-index: 1;
+}
+
+@media print {
+    .card::before {
+        content: "JADON'S ACADEMY";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-30deg);
+        font-size: 70px;
+        color: rgba(0, 0, 0, 0.10);
+        white-space: nowrap;
+        pointer-events: none;
+        z-index: -1;   /* watermark peeche */
+    }
+
+    .card,
+    .card * {
+        position: relative;
+        z-index: 1;    /* text & inputs upar */
+        background: transparent;
+    }
+
+    button {
+        display: none;
+    }
+}
+
+
+
+
+
+
