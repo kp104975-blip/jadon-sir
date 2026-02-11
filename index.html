@@ -4,155 +4,171 @@
 <head>
     <meta charset="UTF-8">
     <title>Admission Form</title>
+
+    <!-- ✅ Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- ✅ Your CSS (must be AFTER bootstrap) -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <nav>
-        <h1>Jadon's Academy</h1>
-        <p>A-3, Hanuman Nagar, Gola Ka Mandir, <br>Near Tata Moters Showroom, <br>Gwalior.</p><br>
-        <div class="section">
-            <label>
-                <h5>Admission No:-<input type="text" id="admissionNo" style="margin-left: 17px;"></h5>
-            </label>
+<div class="container-fluid">
 
-            <label>
-                <h5>Addmission Date:-<input type="text" id="admissionNo"> </h5>
-            </label>
+    <div class="a4 mx-auto">
+
+        <!-- ========== TOP COPY ========== -->
+        <div class="half">
+
+            <h1>Jadon's Academy</h1>
+            <p class="address">
+                A-3, Hanuman Nagar, Gola Ka Mandir,<br>
+                Near Tata Motors Showroom,<br>
+                Gwalior.
+            </p>
+
+            <!-- TOP INFO -->
+            <div class="row two-col">
+                <div class="col-6 left-col">
+                    <label>Admission No:
+                        <input type="text">
+                    </label>
+                    <label>Admission Date:
+                        <input type="text">
+                    </label>
+                </div>
+
+                <div class="col-6 right-col">
+                    <label>Date & Time:
+                        <input type="text">
+                    </label>
+                    <label>Aadhar No:
+                        <input type="text">
+                    </label>
+                </div>
+            </div>
+
+            <!-- CARD -->
+            <div class="box">
+                <div class="field">
+                    <span class="label">Name :</span>
+                    <input type="text">
+                </div>
+
+                <div class="field">
+                    <span class="label">D.O.B. :</span>
+                    <input type="text">
+                </div>
+
+                <div class="field">
+                    <span class="label">Mobile No :</span>
+                    <input type="text">
+                </div>
+
+                <div class="field">
+                    <span class="label">Father Name :</span>
+                    <input type="text">
+                </div>
+
+                <div class="field">
+                    <span class="label">Mother Name :</span>
+                    <input type="text">
+                </div>
+
+                <div class="field">
+                    <span class="label">Fees :</span>
+                    <input type="text">
+                </div>
+
+                <div class="sign">
+                    <span>Parent's Sign</span>
+                    <span>Sign Of Authority</span>
+                </div>
+            </div>
+
         </div>
-        <label class="date">
-            <h5>Date & time:-<input type="text" id="admissionNo"></h5>
-        </label>
-    </nav>
-    <br>
 
-    <div class="page">
+        <hr class="cut">
 
+        <!-- ========== BOTTOM COPY ========== -->
+        <div class="half">
 
+            <h1>Jadon's Academy</h1>
+            <p class="address">
+                A-3, Hanuman Nagar, Gola Ka Mandir,<br>
+                Near Tata Motors Showroom,<br>
+                Gwalior.
+            </p>
 
+            <div class="row two-col">
+                <div class="col-6 left-col">
+                    <label>Admission No:
+                        <input type="text">
+                    </label>
+                    <label>Admission Date:
+                        <input type="text">
+                    </label>
+                </div>
 
+                <div class="col-6 right-col">
+                    <label>Date & Time:
+                        <input type="text">
+                    </label>
+                    <label>Aadhar No:
+                        <input type="text">
+                    </label>
+                </div>
+            </div>
 
-        <div class="card">
-            <label>
-                <h5>Name :-<input type="text" id="admissionNo" style="margin-left: 47px;"></h5>
-            </label>
-            <!-- <input type="text" id="studentName"> -->
+            <div class="box">
+                <div class="field">
+                    <span class="label">Name :</span>
+                    <input type="text">
+                </div>
 
-            <label>
-                <h5>D.O.B. :-<input type="text" id="admissionNo" style="margin-left: 42px;"></h5>
-            </label>
-            <!-- <input type="date" id="dob"> -->
+                <div class="field">
+                    <span class="label">D.O.B. :</span>
+                    <input type="text">
+                </div>
 
-            <label>
-                <h5>Mobile No. :-<input type="text" id="admissionNo" style="margin-left: 16px;"></h5>
-            </label>
-            <!-- <input type="text" id="mobile"> -->
+                <div class="field">
+                    <span class="label">Mobile No :</span>
+                    <input type="text">
+                </div>
 
-            <label>
-                <h5>Father name :-<input type="text" id="admissionNo" style="margin-left: 4px;"></h5>
-            </label>
-            <!-- <input type="text" id="fatherName"> -->
+                <div class="field">
+                    <span class="label">Father Name :</span>
+                    <input type="text">
+                </div>
 
-            <label>
-                <h5>Mother name :-<input type="text" id="admissionNo"></h5>
-            </label>
-            <!-- <input type="text" id="motherName"> -->
+                <div class="field">
+                    <span class="label">Mother Name :</span>
+                    <input type="text">
+                </div>
 
-            <label>
-                <h5>Fees :-<input type="text" id="admissionNo" style="margin-left: 52px;"></h5>
-            </label>
-            <!-- <input type="number" id="fees"> -->
+                <div class="field">
+                    <span class="label">Fees :</span>
+                    <input type="text">
+                </div>
 
-            <ul>
-                <p style="margin-top: 60px;">Parent's Sign</p>
-            </ul>
-            <ul>
-                <p class="authority">Sign Of Authority</p>
-            </ul>
-
+                <div class="sign">
+                    <span>Parent's Sign</span>
+                    <span>Sign Of Authority</span>
+                </div>
+            </div>
 
         </div>
-
-
 
     </div>
-    <br><br><br><br><br>
 
-    <nav>
-        <h1>Jadon's Academy</h1>
-        <p>A-3, Hanuman Nagar, Gola Ka Mandir, <br>Near Tata Moters Showroom, <br>Gwalior.</p><br>
-        <div class="section">
-            <label>
-                <h5>Admission No:-<input type="text" id="admissionNo" style="margin-left: 17px;"></h5>
-            </label>
+    <button onclick="window.print()" class="btn btn-outline-dark">PRINT</button>
 
-            <label>
-                <h5>Addmission Date:-<input type="text" id="admissionNo"> </h5>
-            </label>
-        </div>
-        <label class="date">
-            <h5>Date & time:-<input type="text" id="admissionNo"></h5>
-        </label>
-    </nav>
-    <br>
+</div>
 
-    <div class="page">
+<!-- ✅ Bootstrap JS (optional, future use) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/rough wok/script.js"></script>
 
-
-
-
-
-        <div class="card">
-            <label>
-                <h5>Name :-<input type="text" id="admissionNo" style="margin-left: 47px;"></h5>
-            </label>
-            <!-- <input type="text" id="studentName"> -->
-
-            <label>
-                <h5>D.O.B. :-<input type="text" id="admissionNo" style="margin-left: 42px;"></h5>
-            </label>
-            <!-- <input type="date" id="dob"> -->
-
-            <label>
-                <h5>Mobile No. :-<input type="text" id="admissionNo" style="margin-left: 16px;"></h5>
-            </label>
-            <!-- <input type="text" id="mobile"> -->
-
-            <label>
-                <h5>Father name :-<input type="text" id="admissionNo" style="margin-left: 4px;"></h5>
-            </label>
-            <!-- <input type="text" id="fatherName"> -->
-
-            <label>
-                <h5>Mother name :-<input type="text" id="admissionNo"></h5>
-            </label>
-            <!-- <input type="text" id="motherName"> -->
-
-            <label>
-                <h5>Fees :-<input type="text" id="admissionNo" style="margin-left: 52px;"></h5>
-            </label>
-            <!-- <input type="number" id="fees"> -->
-
-            <ul>
-                <p style="margin-top: 60px;">Parent's Sign</p>
-            </ul>
-            <ul>
-                <p class="authority">Sign Of Authority</p>
-            </ul>
-
-
-        </div>
-
-
-
-    </div>
-
-    <button onclick="printForm()" style="margin-left: 866px;">PRINT</button>
-
-
-
-    <script src="script.js"></script>
 </body>
-
 </html>

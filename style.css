@@ -1,159 +1,191 @@
-nav {
-    text-align: center;
-    width: 100%;
-    margin-top: -46px;
-}
-
 body {
+    background: #ccc;
     font-family: Arial, Helvetica, sans-serif;
-    background: #eee;
     padding: 20px;
 }
 
-.card {
-    width: 700px;
+/* ===== A4 PAGE ===== */
+.a4 {
+    width: 210mm;
+    height: 297mm;
+    background: white;
     margin: auto;
-    background: #eee;
-    padding: 30px;
-    border: 1px solid #000;
-
+    padding: 12mm;
+    box-sizing: border-box;
 }
 
-label {
-    display: block;
-    margin-top: 15px;
-    font-weight: bold;
+/* ===== HALF ===== */
+.half {
+    height: 48%;
 }
 
-input {
-    width: 10%;
-    border: none;
-    /* border-bottom:1px solid #000; */
-    padding: 5px;
-    font-size: 14px;
+/* ===== TEXT ===== */
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin: 6px 0;
 }
 
-.top {
+.address {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+/* ===== TOP INFO ===== */
+.two-col {
     display: flex;
     justify-content: space-between;
+    font-size: 15px;
+    margin-bottom: 12px;
 }
 
-.top .left,
-.top .right {
-    width: 45%;
+.left-col label,
+.right-col label {
+    display: block;
+    margin-bottom: 6px;
+    
 }
 
-button {
+.right-col {
+    text-align: right;
+}
+
+
+
+/* ===== BOX ===== */
+.box {
+    border: 2px solid #000;
+    padding: 15px;
+    font-size: 15px;
+    position: relative;   /* ✅ ADD THIS */
+    overflow: hidden;     /* ✅ ADD THIS */
+}
+
+
+.box label {
+    display: block;
+    margin-bottom: 8px;
+    
+}
+
+/* ===== SIGN ===== */
+.sign {
+    display: flex;
+    justify-content: space-between;
     margin-top: 30px;
-    padding: 10px 30px;
-    font-size: 16px;
-    cursor: pointer;
 }
 
-.section label h5 {
-    margin-top: -20px;
-    margin-left: -407px;
+/* ===== CUT ===== */
+.cut {
+    border-top: 2px dashed #000;
+    margin: 10px 0;
 }
 
-.date {
-    margin-right: -440px;
-    margin-top: -63px;
+/* ===== BUTTON ===== */
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 35px;
+    font-size: 18px;
 }
 
-p {
-    margin-top: -20px;
+/* ===== FIELD ALIGNMENT ===== */
+.field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
 }
 
-.card label h5 input {
-    width: 213px;
-
+.label {
+    width: 120px;          /* 🔥 sab labels same width */
+    font-size: 15px;
 }
 
-.authority {
-    margin-left: 507px;
-    margin-top: -30px;
+.field input {
+    flex: 1;               /* 🔥 sab lines same length */
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    font-size: 15px;
+    padding: 2px 4px;
+    background: transparent;
 }
 
+.btn{
+    margin-left: 877px;
+}
 
-/* =========================
-   SCREEN RESPONSIVE ONLY
-   ========================= */
+/* ===== LOGIN BACKGROUND ===== */
+.login-bg {
+    background: linear-gradient(135deg, #1f3c88, #3a6073);
+}
 
-@media screen and (max-width: 768px) {
+/* ===== LOGIN CARD ===== */
+.login-card {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
 
-    nav {
-        margin-top: 0;
-        text-align: center;
-    }
+/* ===== INPUT STYLE ===== */
+.form-control {
+    border-radius: 8px;
+}
 
-    .section label h5 {
-        margin-left: 0;
-        margin-top: 10px;
-        text-align: center;
-    }
-
-    .date {
-        margin: 10px 0 0 0;
-        text-align: center;
-    }
-
-    .card {
-        width: 100%;
-        padding: 15px;
-    }
-
-    .card label h5 {
-        font-size: 14px;
-    }
-
-    .card label h5 input {
-        width: 100%;
-        margin-top: 6px;
-    }
-
-    .authority {
-        margin-left: 0;
-        margin-top: 20px;
-        text-align: right;
-    }
+/* ===== BUTTON ===== */
+button {
+    font-weight: 600;
+    border-radius: 8px;
 }
 
 
-/* watermark */
 
-.card {
-    position: relative;
-    z-index: 1;
-}
 
+
+/* ===== PRINT ===== */
 @media print {
-    .card::before {
-        content: "JADON'S ACADEMY";
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) rotate(-30deg);
-        font-size: 70px;
-        color: rgba(0, 0, 0, 0.10);
-        white-space: nowrap;
-        pointer-events: none;
-        z-index: -1;   /* watermark peeche */
+
+    @page {
+        size: A4;
+        margin: 0;
     }
 
-    .card,
-    .card * {
-        position: relative;
-        z-index: 1;    /* text & inputs upar */
-        background: transparent;
+    body {
+        background: white;
+        padding: 0;
     }
 
     button {
         display: none;
     }
+
+    .box::before {
+        content: "JADON'S ACADEMY";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-30deg);
+        font-size: 45px;
+        color: rgba(0,0,0,0.12);
+        white-space: nowrap;
+        pointer-events: none;
+    }
+   .field input{
+        border: none;
+    }
+
+    .left-col input{
+    border: none;
 }
 
+.right-col input{
+    border: none;
+}
 
+.btn{
+    display: none;
+}
 
-
-
-
+}
