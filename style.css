@@ -188,4 +188,62 @@ button {
     display: none;
 }
 
+
 }
+
+/* Mobile */
+@media (max-width: 576px) {
+    .row{
+        height: 1600px;
+    }
+    .login-card{
+        height: 734px;
+    }
+    
+    .l{
+    margin-top: 132px;
+    }
+    .box{
+        margin-top: -1540px;
+    }
+    .btn{
+        margin-left: 439px;
+    }
+ }
+
+
+ /* ================= PRINT FIX FOR MOBILE ================= */
+@media print and(max-width: 576px) {
+
+    html, body {
+        width: 210mm;
+        height: 297mm;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        zoom: 1;                 /* desktop scale */
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .a4 {
+        width: 210mm !important;
+        height: 297mm !important;
+        transform: scale(1) !important;
+        margin: 0 auto !important;
+    }
+
+    /* 🚫 disable mobile responsiveness during print */
+    .container,
+    .container-fluid,
+    .row,
+    [class*="col-"] {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+}
+
+
+
