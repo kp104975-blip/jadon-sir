@@ -12,7 +12,7 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
 
     if (username === correctUsername && password === correctPassword) {
         // ✅ Success → redirect
-        window.location.href = "/index.html";
+        window.location.href = "/recipt.html";
     } else {
         // ❌ Error message
         document.getElementById("errorMsg").style.display = "block";
