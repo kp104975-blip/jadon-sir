@@ -8,7 +8,7 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
 
     // 🔐 Correct credentials
     const correctUsername = "Jadon Academy";
-    const correctPassword = "Jad@fees2000";
+    const correctPassword = "san1231";
 
     if (username === correctUsername && password === correctPassword) {
         // ✅ Success → redirect
