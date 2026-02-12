@@ -17,6 +17,11 @@ body {
 /* ===== HALF ===== */
 .half {
     height: 48%;
+    
+}
+
+.uppr{
+    margin-top: -29px;
 }
 
 /* ===== TEXT ===== */
@@ -79,7 +84,11 @@ h1 {
 /* ===== CUT ===== */
 .cut {
     border-top: 2px dashed #000;
-    margin: 10px 0;
+    margin-top: 60px;
+}
+
+.niche{
+margin-top: 15px;
 }
 
 /* ===== BUTTON ===== */
